@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tipe Rumah - Moon Residence</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none;">
+          <h2>Moon <br><span id="black-title">Residence.</span></h2>
+        </a>
+      </div>
+      <ul class="nav_menu_list">
+        <li class="nav_menu_item"><a href="index.html" class="nav_menu_link">Beranda</a></li>
+        <li class="nav_menu_item"><a href="tipe_rumah.html" class="nav_menu_link menu_active">Tipe Rumah</a></li>
+        <li class="nav_menu_item"><a href="tentang.html" class="nav_menu_link">Tentang Kami</a></li>
+        <li class="nav_menu_item"><a href="kontak.html" class="nav_menu_link">Kontak</a></li>
+        <li class="nav_menu_item"><a href="blog.html" class="nav_menu_link">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 class="page-title" data-aos="fade-down">Tipe Rumah</h1>
+    </div>
+  </section>
+
+  <!-- Daftar Tipe Rumah -->
+  <section class="tipe-section">
+    <div class="container">
+      <p class="info-text" data-aos="fade-up" data-aos-delay="100">
+        Berikut adalah berbagai tipe rumah yang kami tawarkan sesuai kebutuhan Anda:
+      </p>
+
+      <div class="tipe-grid">
+        <div class="tipe-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="./img/house-1.png" alt="Tipe A" />
+           <h3>Tipe A</h3>
+          <ul class="fitur-rumah">
+          <li><i class="fa fa-bed"></i> 2 Kamar Tidur</li>
+          <li><i class="fa fa-bath"></i> 1 Kamar Mandi</li>
+          <li><i class="fa fa-car"></i> Carport</li>
+          <li><i class="fa fa-ruler-combined"></i> Luas Tanah 72 m²</li>
+          </ul>
+        </div>
+
+        <div class="tipe-card" data-aos="fade-up" data-aos-delay="300">
+           <img src="./img/house-2.png" alt="Tipe B" />
+             <h3>Tipe B</h3>
+          <ul class="fitur-rumah">
+          <li><i class="fa fa-bed"></i> 3 Kamar Tidur</li>
+          <li><i class="fa fa-bath"></i> 2 Kamar Mandi</li>
+          <li><i class="fa fa-tree"></i> Taman Depan</li>
+          <li><i class="fa fa-ruler-combined"></i> Luas Bangunan 90 m²</li>
+         </ul>
+        </div>
+
+        <div class="tipe-card" data-aos="fade-up" data-aos-delay="400">
+          <img src="./img/house-3.png" alt="Tipe C" />
+        <h3>Tipe C</h3>
+        <ul class="fitur-rumah">
+        <li><i class="fa fa-bed"></i> 3+1 Kamar Tidur</li>
+        <li><i class="fa fa-bath"></i> 3 Kamar Mandi</li>
+        <li><i class="fa fa-building"></i> Balkon</li>
+        <li><i class="fa fa-warehouse"></i> Garasi</li>
+        <li><i class="fa fa-ruler-combined"></i> Luas 120 m²</li>
+         </ul>
+        </div>
+
+        <div class="tipe-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="./img/house-4.png" alt="Tipe D" />
+        <h3>Tipe D</h3>
+        <ul class="fitur-rumah">
+         <li><i class="fa fa-bed"></i> 2 Kamar Tidur</li>
+          <li><i class="fa fa-bath"></i> 2 Kamar Mandi</li>
+          <li><i class="fa fa-car"></i> Carport</li>
+          <li><i class="fa fa-tree"></i> Taman</li>
+          <li><i class="fa fa-ruler-combined"></i> Luas Tanah 125 m²</li>
+        </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    
+    // Navbar Toggle
+    const toggleBtn = document.getElementById("toggle_btn");
+    const closeBtn = document.getElementById("close_btn");
+    const navMenu = document.getElementById("nav_menu");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      navMenu.style.display = "none";
+    });
+  </script>
+
+</body>
+</html>

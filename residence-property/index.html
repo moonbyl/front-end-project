@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon Residence</title>
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="header shadow-header">
+  <nav class="nav">
+    <div class="logo">
+      <a href="index.html" style="text-decoration: none;">
+        <h2>Moon <br><span id="black-title">Residence.</span></h2>
+      </a>
+    </div>
+
+    <ul class="nav_menu_list desktop">
+      <li><a href="index.html" class="nav_menu_link menu_active">Beranda</a></li>
+      <li><a href="tipe_rumah.html" class="nav_menu_link">Tipe Rumah</a></li>
+      <li><a href="tentang.html" class="nav_menu_link">Tentang Kami</a></li>
+      <li><a href="kontak.html" class="nav_menu_link">Kontak</a></li>
+      <li><a href="blog.html" class="nav_menu_link">Blog</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Section Beranda -->
+  <section class="wrapper-home">
+    <div class="container">
+      <div class="grid-cols-2">
+        <!-- Kiri -->
+        <div class="grid-item-1">
+          <h1 class="main-heading fade-in">
+            Selamat datang di <span>Moon Residence.</span>
+          </h1>
+          <p class="info-text" data-aos="fade-up" data-aos-delay="200">
+            Hunian yang nyaman dan aman untuk keluarga anda.
+          </p>
+
+          <div class="btn_wrapper">
+            <a href="kontak.html" class="btn_home view_more_btn fade-in">
+                Kontak Kami <i class="fa fa-phone"></i>
+            </a>
+
+<a href="tentang.html" class="btn_home view_more_btn fade-in">
+  Info Detail
+</a>
+
+          </div>
+        </div>
+
+        <!-- Kanan -->
+        <div class="grid-item-2">
+          <div class="team_img_wrapper">
+            <img src="./img/home.png" alt="gambar rumah" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Fasilitas -->
+<section class="facilities-section">
+  <div class="container">
+    <h2 class="section-title">Fasilitas Kami</h2>
+
+    <!-- Fasilitas 1 -->
+    <div class="facility-item" data-aos="fade-right">
+      <div class="facility-img">
+        <img src="./img/fasilitas/1.jpg" alt="Kolam Renang" />
+      </div>
+      <div class="facility-desc">
+        <h3>Kolam Renang</h3>
+        <p>Kolam renang modern dengan desain eksklusif, cocok untuk relaksasi keluarga dan olahraga harian.</p>
+      </div>
+    </div>
+
+    <!-- Fasilitas 2 -->
+    <div class="facility-item reverse" data-aos="fade-left">
+      <div class="facility-img">
+        <img src="./img/fasilitas/2.jpg" alt="Pusat Kebugaran" />
+      </div>
+      <div class="facility-desc">
+        <h3>Pusat Kebugaran</h3>
+        <p>Dilengkapi dengan alat gym lengkap dan ruang yoga untuk mendukung gaya hidup sehat Anda.</p>
+      </div>
+    </div>
+
+    <!-- Fasilitas 3 -->
+    <div class="facility-item" data-aos="fade-right">
+      <div class="facility-img">
+        <img src="./img/fasilitas/3.jpg" alt="Restaurant dan Cafe" />
+      </div>
+      <div class="facility-desc">
+        <h3>Restaurant & Cafe</h3>
+        <p>Nikmati sajian makanan dan minuman lezat di restoran dan kafe yang tersedia di dalam komplek.</p>
+      </div>
+    </div>
+
+    <!-- Fasilitas 4 -->
+    <div class="facility-item reverse" data-aos="fade-left">
+      <div class="facility-img">
+        <img src="./img/fasilitas/4.jpg" alt="Taman Indah" />
+      </div>
+      <div class="facility-desc">
+        <h3>Taman Indah & Ruang Hijau</h3>
+        <p>Taman yang rindang dan asri, ideal untuk berjalan santai atau menghabiskan waktu bersama keluarga.</p>
+      </div>
+    </div>
+
+    <!-- Fasilitas 5 -->
+    <div class="facility-item" data-aos="fade-right">
+      <div class="facility-img">
+        <img src="./img/fasilitas/5.jpg" alt="Sistem Keamanan" />
+      </div>
+      <div class="facility-desc">
+        <h3>Sistem Keamanan</h3>
+        <p>Keamanan 24 jam dengan CCTV dan petugas keamanan profesional untuk menjaga kenyamanan Anda.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- JS Toggle Navbar -->
+  <script>
+    const toggleBtn = document.getElementById("toggle_btn");
+    const closeBtn = document.getElementById("close_btn");
+    const navMenu = document.getElementById("nav_menu");
+
+    toggleBtn.addEventListener("click", () => {
+      navMenu.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", () => {
+      navMenu.style.display = "none";
+    });
+  </script>
+  <!-- Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="./js/script.js"></script>
+
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".fade-in");
+    elements.forEach(el => {
+      setTimeout(() => {
+        el.classList.add("visible");
+      }, 300); // Delay 300ms
+    });
+  });
+</script>
+
+</html>
